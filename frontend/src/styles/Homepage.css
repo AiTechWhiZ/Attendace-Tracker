@@ -1,0 +1,113 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f0f0f0;
+}
+
+.attendance-form {
+  background-color: #003366;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.attendance-form.hidden {
+  animation: slideOut 0.5s ease-in forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.attendance-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.attendance-form input, 
+.attendance-form select, 
+.attendance-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.attendance-form input{
+  width: 96.5%;
+}
+
+.attendance-form input[type="date"], 
+.attendance-form input[type="text"], 
+.attendance-form select {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.attendance-form button {
+  background-color: #0066cc;
+  color: white;
+  cursor: pointer;
+}
+
+.attendance-form button:hover {
+  background-color: #004d99;
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1rem;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

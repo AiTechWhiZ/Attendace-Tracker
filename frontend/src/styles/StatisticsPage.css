@@ -1,0 +1,25 @@
+.statistics-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e0e0e0; /* Light grey background for the entire page */
+  height: 90vh; /* Ensure it takes up the full viewport height */
+}
+
+.statistics-page h2 {
+  color: #003366; /* Dark blue for the heading */
+  margin-bottom: 1.5rem;
+}
+
+.statistics-page p {
+  background-color: #003366; /* Dark blue background for each statistic */
+  color: white; /* White text color */
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+}

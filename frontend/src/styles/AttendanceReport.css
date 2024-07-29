@@ -1,0 +1,82 @@
+.attendance-report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff; /* Dark Blue */
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-section label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #000000; /* Light Blue Gray */
+}
+
+.filter-section select,
+.filter-section input {
+  padding: 0.5rem;
+  border: 1px solid #003366; /* Darker Blue */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #00274d; /* Dark Blue */
+  color: #b0bec5; /* Light Blue Gray */
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: #003366; /* Dark Blue */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+table th, table td {
+  border: 1px solid #004080; /* Medium Dark Blue */
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #004080; /* Medium Dark Blue */
+  color: #ffffff; /* White */
+}
+
+table tr:nth-child(even) {
+  background-color: #00274d; /* Darker Blue */
+  color: #fff;
+}
+
+table tr:nth-child(odd) {
+  background-color: #003366; /* Dark Blue */
+  color: #fff;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: #004080; /* Medium Dark Blue */
+  color: #ffffff; /* White */
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #00509e; /* Lighter Blue */
+}
+
+.pagination button:hover {
+  background-color: #003d80; /* Slightly Darker Blue */
+}
